@@ -178,6 +178,64 @@ Dictionary
 'Aluva'
 dictionary is not ordered
 
+SUM OF 5 NUMBERS
+print("enter 5 numbers")
+sum=0
+a=0
+for i in range(5):
+ a=input()
+ sum=sum+a
+sum=str(sum)
+print("sum=" +sum) 
+
+O/P
+enter 5 numbers
+1
+2
+3
+4
+5
+sum=15
+
+>>> c="1,2,3,4,5"
+>>> c.split(",")
+['1', '2', '3', '4', '5']
+>>> num=c.split(",")
+>>> sum=0
+>>> for num in num:
+...  sum += int(num)
+... 
+>>> sum
+15
+
+TO GET THE NO. OF EVEN AND ODD NUMBERS IN ASTRING
+nums = input().split(",")
+
+sum_o=0
+sum_e=0
+
+for num in nums:
+    i = int(num)
+
+    if i % 2 ==0:
+        sum_e += 1
+    else:
+        sum_o += 1
+
+print(sum_e,sum_o) 
+
+O/P
+"1,2,3,4,5"          
+(2, 3)
+
+for num in nums:
+    try:
+        i = int(num)
+    except:
+        print("invalid number")
+        i=0
+try and except is used for  handling exception
+it detects the error and runs  the balnce code
 
 
 
